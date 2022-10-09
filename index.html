@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos HTML</title>
+</head>
+
+<body>
+    <h1 id="topo">Primeiros passos em HTML</h1>
+    <hr />
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#surgimento">Quando surgiu o HTML?</a></li>
+        <li><a href="#tags">O que são tags HTML?</a></li>
+        <li><a href="#atributos">Atributos</a></li>
+        <li><a href="#estrutura">Estrutura básica</a></li>
+        <li><a href="#conteudo">Tags de conteúdo</a></li>
+        <li><a href="#texto">Tags de texto</a></li>
+        <li><a href="#listas">Tags de listas</a></li>
+        <li><a href="#outTags">Outras tags</a></li>
+        <li><a href="#referencias">Referências</a></li>
+    </ul>
+    <div>
+        <!--Parte 1: Surgimento-->
+        <h3 id="surgimento">Quando surgiu o HTML?</h3>
+        <p>Antes de começar a prática do HTML, é importante conhecer seu surgimento, funcionamento, onde criar e editar
+            os
+            códigos e logo após entender o que é nescessário para começar sua prática.</p>
+        <p>O HTML foi criado em 1991, por Tim Berners-Lee, no CERN (European Council for Nuclear Research) na suíça.
+            Inicialmente o HTML foi projetado para interligar instituiçõess<br>de pesquisa próximas, e compartilhar
+            documentos com facilidade. Em 1992, foi liberada a biblioteca de desenvolvimento WWW ( World Wide Web), uma
+            rede
+            de alcance mundial,<br> que junto com o HTML proporcionou o uso em escala mundial da WEB.</p>
+        <p>O HTML foi a primeira linguagem de nível mundial, porem não é a única. Existem muitas outras linguagens
+            destinadas á criação de paginas da web, porém o HTML ainda prevalece. Atualmente,<br>já é possível integrar
+            varias linguagens na mesma pagina da Web, sendo possível usar duas ou mais linguagens no mesmo site.
+            Para criar e editar códigos em HTML é necessário qualquer<br>editor de texto comum, como bloco de notas.
+            Para
+            testar os códigos, basta salvar o arquivo em formato .HTML e executar. Para o teste é necessário ter um
+            navegador configurado como padrão.<br>Não é necessária internet, pois o arquivo com os códigos esta na
+            maquina
+            onde esta sendo executado.</p>
+    </div>
+    <div>
+        <!--Parte 2: tags-->
+        <h3 id="tags">O que são tags HTML?</h3>
+        <p>As tags são usadas para informar ao navegador a estrutura do site. Ou seja: quando se escreve um código em
+            HTML, as
+            tags serão interpretadas pelo navegador, produzindo assim a estrutura<br>e o conteúdo visual da página.
+            A principal característica das tags é estarem sempre dentro dos sinais de chevron (sinal de “maior que” e
+            “menor
+            que”), ou seja: <>.
+                As tags HTML são divididas<br>em dois tipos: as que precisam de fechamento e as que não precisam de
+                fechamento. As
+                tags que precisam de fechamento possuem a sintaxe < tag> </ tag>, já as que não precisam de
+                fechamento<br>possuem
+                como estrutura
+                < tag />. Além disso, uma mesma tag pode receber um ou mais atributos, que possuirá um valor que
+                modifica sua estrutura ou
+                funcionalidade.</p>
+    </div>
+    <div>
+        <!--Parte 3: atributos-->
+        <h3 id="atributos">Atributos</h3>
+        <p>Os atributos são usados para personalizar as tags, modificando sua estrutura ou funcionalidade. Igualmente,
+            os atributos
+            são utilizados para atribuir uma classe ou id a um elemento.<br>A maioria das tags tem seus próprios
+            atributos.
+            Contudo, existem alguns atributos genéricos que podem ser utilizados na maioria das tags HTML.</p>
+        <p>Logo abaixo, principais atributos das tags:</p>
+        <ul>
+            <li>class="...": Atribui uma classe ao elemento (uma classe pode ser utilizada para um ou mais elementos);
+            </li>
+            <li>id="...": Atribui um id ao elemento (um id deve ser único, ou seja atribuído a um único elemento);</li>
+            <li>style="...": Permite incluir elementos CSS (estilos) dentro da tag;</li>
+            <li>lang="...": Define o idioma principal do elemento;</li>
+            <li>title="...": Define o título do elemento;</li>
+            <li>alt="...": Define um texto alternativo e, por isso, é muito utilizado em imagens, auxilia nas práticas
+                de SEO;</li>
+            <li>hidden: Oculta o elemento</li>
+            <li>align="...": Permite definir o padrão de alinhamento desse elemento, como por exemplo: right, center,
+                left e justify;</li>
+            <li>width="...": Define uma largura para o elemento;</li>
+            <li>height="...": Define uma altura para o elemento.</li>
+        </ul>
+        <p>Essas são os principais atributos, porém existem diversos outros que devem ser estudados e podem ser
+            utilizados no seu código.</p>
+    </div>
+    <div>
+        <!--Parte 4: Estrutura-->
+        <h3 id="estrutura">Estrutura básica</h3>
+        <p>A estrutura básica do HTML é formada por:
+        <ol>
+            <li>
+                < !DOCTYPE html>
+            </li>
+            <li>
+                < html lang="pt-br">
+            </li>
+            <li>
+                < head>
+            </li>
+            <li>
+                < title>Título da página< /title>
+            </li>
+            <li>
+                < meta charset="utf-8">
+            </li>
+            <li>
+                < /head>
+            </li>
+            <li>
+                < body>
+            </li>
+            <li>Aqui vai o código ou texto que irá aparecer no site.</li>
+            <li>
+                < /body>
+            </li>
+            <li>
+                < /html>
+            </li>
+        </ol>
+        </p>
+        <p>TAG é um importante elemento que dá vida ao html, pois é necessário abrir e fechar tags.<br> Um exemplo de
+            tag é: < body> Aqui dentro desta tag você pode digitar seu texto ou digitar códigos. < /body>
+                    <br>Abrir a tag body é < body>. Fechar a tag body é < /body> Assim funciona com as outras tags, no
+                            html possuem tags que não precisam ser fechadas também.</p>
+    </div>
+    <div>
+        <!--Parte 5: Tags de conteúdo-->
+        <!--TAGS DE TÍTULO-->
+        <h3 id="conteudo">Tags de conteúdo</h3>
+        <button><a href="#topo">Voltar ao topo</a></button>
+        <p>Para organizar o conteúdo do site de forma adequada, vamos listar as principais tags para incluir conteúdo à
+            página, como títulos, parágrafos, imagens, links, etc.</p>
+        <h4>Tags de título</h4>
+        <p>As tags de título possuem valor semântico, variando entre seis níveis hierárquicos. Para fins de otimização
+            SEO é importante entender como funcionam,<br> e fazer uma utilização adequada. Para definir títulos,
+            utilizamos as tags:</p>
+        <p>
+            < h1>
+                < /h1> - Título de maior valor hierárquico<br>
+                    < h2>
+                        < /h2><br>
+                            < h3>
+                                < /h3><br>
+                                    < h4>
+                                        < /h4><br>
+                                            < h5>
+                                                < /h5><br>
+                                                    < h6>
+                                                        < /h6> - Título de menor valor hierárquico
+        </p>
+        <p>Exemplificando como cada um ficaria, seria exatamente conforme mostrado abaixo:</p>
+        <ol>
+            <li>
+                <h1>Tag de título h1.</h1>
+            </li>
+            <li>
+                <h2>Tag de título h2</h2>
+            </li>
+            <li>
+                <h3>Tag de título h3</h3>
+            </li>
+            <li>
+                <h4>Tag de título h4</h4>
+            </li>
+            <li>
+                <h5>Tag de título h5</h5>
+            </li>
+            <li>
+                <h6>Tag de título h6</h6>
+            </li>
+        </ol>
+        <!--TAGS DE TEXTO-->
+        <h3 id="texto">Tags de texto</h3>
+        <button><a href="#topo">Voltar ao topo</a></button>
+        <p>As tags de texto definem textos, estilos de fonte, parágrafos, spans, quebras de linhas, etc. Listadas abaixo
+            estão:</p>
+        <ul>
+            <li>
+                < p>
+                    < /p> = Principal tag de texto, compõe um parágrafo;
+            </li>
+            <li>
+                < span>
+                    < /span> = Apesar de ter uma funcionalidade e características parecidas com os parágrafos, costumam
+                        ser utilizadas apenas para pequenas informações,<br> como legendas de um formulário, legendas de
+                        uma imagem, etc. Também pode ser utilizada para formar um container;
+            </li>
+            <li>
+                < pre>
+                    < /pre> = Tag utilizada para representar texto pré-formatado. Muito utilizada para inserir códigos;
+            </li>
+            <li>
+                < b>
+                    < /b> = Transforma o conteúdo em negrito;
+            </li>
+            <li>
+                < i>
+                    < /i> = Transforma o conteúdo em itálico;
+            </li>
+            <li>
+                < br> = Essa tag não necessita de fechamento, ela executa a função de quebra de linha.
+            </li>
+            <li>
+                < hr/> = Essa tag não necessita de fechamento, ela forma uma linha horizontal.
+            </li>
+            <li>
+                < mark>
+                    < /mark> = O elemento mark serve para dar destaque a uma parte do código, trechos de relevância
+                        especial.
+            </li>
+            <li>
+                < strong>
+                    < /strong> = Dá ao texto uma forte ênfase que tradicionalmente significa que o texto é exibido como
+                        ousado pelo navegador. Usado em trechos de importância especial
+            </li>
+            <li>
+                < u>
+                    < /u> = A tag representa algum texto que é desarticulado e estilizado de forma diferente do texto
+                        normal, como palavras mal-escritos ou nomes próprios em texto chinês.
+            </li>
+            <li>
+                < small>
+                    < /small> = A tag define texto menor, como direitos autorais e outros comentários laterais.
+            </li>
+            <li>
+                < sub>
+                    < /sub> = A tag define texto subscrito. O texto subscrito aparece meio caractere abaixo da linha
+                        normal e, às vezes, é renderizado em uma fonte menor.<br>Texto subscrito pode ser usado para
+                        fórmulas químicas, como H<sub>2</sub>O.
+            </li>
+            <li>
+                < sup>
+                    < /sup> = A tag define texto de sobrescrito. O texto de sobrescrito aparece meio caractere acima da
+                        linha normal e, às vezes, é renderizado em uma fonte menor.<br> O texto sobrescrito pode ser
+                        usado para notas de rodapé, como WWW<sup>[1]</sup>.
+            </li>
+            <li>
+                < blockquote>
+                    < /blockquote> = A tag especifica uma seção que é citada de outra fonte, por exemplo:<blockquote>Os
+                            navegadores geralmente indentifica os elementos.</blockquote>
+            </li>
+            <li>
+                < del>
+                    < /del> = A tag define texto que foi excluído de um documento. Os navegadores geralmente atacam uma
+                        linha através de texto suprimido.
+            </li>
+            <li>
+                < abbr>
+                    < /abbr> = tag define uma abreviação ou um acrônimo, como "HTML", "CSS", "Mr.", "Dr.", "ASAP",
+                        "ATM".
+            </li>
+        </ul>
+        <p>E como exemplo de algumas tags de texto passadas, temos:</p>
+        <p>Tag < b>: <b>Negrito</b></p>
+        <p>Tag < i>: <i>Itálico</i></p>
+        <p>Tag
+            < hr />:
+            <hr />
+        </p>
+        <p>Tag < mark>: <mark>Exemplo de uso da tag mark!</mark></p>
+        <p>Tag < strong>: <strong>Exemplo de uso da tag strong!</strong></p>
+        <p>Tag < u>: <u>Exemplo de uso da tag u!</u></p>
+        <p>Tag < small>: <small>Exemplo de uso da tag small!</small></p>
+        <p>Tag < del>: <del>Exemplo d e uso da tag del!</del></p>
+    </div>
+    <div>
+        <h3 id="listas">Tags de listas</h3>
+        <button><a href="#topo">Voltar ao topo</a></button>
+        <p>Para poder criar uma lista, podemos utilizar uma lista ordenada, a partir das tags < ol>
+                < /ol>, ou uma lista não ordenada, a partir das tags < ul>
+                        < /ul>.<br> Posteriormente, incluímos dentro da lista os elementos da mesma, dentro das tags <
+                                li>
+                                < /li>.
+                                    Vejamos os exemplos a seguir:</p>
+        <p>
+            < p>Minha lista ordenada:< /p><br>
+                    < ol><br>
+                        < li>item 1< /li><br>
+                                < li>item 2< /li><br>
+                                        < li>item 3< /li><br>
+                                                < /ol><br>
+                                                    <br>
+                                                    < p>Minha lista não ordenada:< /p><br>
+                                                            < ul><br>
+                                                                < li>item 1< /li><br>
+                                                                        < li>item 2< /li><br>
+                                                                                < li>item 3< /li><br>
+                                                                                        < /ul>
+        </p>
+        <!--Exemplos das listas-->
+        <p>
+        <p>Minha lista ordenada:</p><br>
+        <ol><br>
+            <li>item 1</li><br>
+            <li>item 2</li><br>
+            <li>item 3</li><br>
+        </ol><br>
+        <br>
+        <p>Minha lista não ordenada:</p><br>
+        <ul><br>
+            <li>item 1</li><br>
+            <li>item 2</li><br>
+            <li>item 3</li><br>
+        </ul>
+        </p>
+    </div>
+    <h3 id="outTags">Outras tags</h3>
+    <button><a href="#topo">Voltar ao topo</a></button>
+    <p>Existem várias outras tags que podem ser usadas no HTML, porém seria muito extenso cita-las, mas algumas mais
+        assenciais estarão apresentadas abaixo. </p>
+    <h4>Tag de link</h4>
+    <p>A tag de link HTML é responsável que faz a ligação entre um documento e outro, sendo ele da mesma página ou de
+        uma página de outro domínio. Esse elemento,<br> garantiu que o HTML se destacasse, e moldou a internet da forma
+        que ela é hoje! Portanto, é o principal fundamento que forma a web.
+        Para realizar um link,<br> podemos chamar as tags < a>< /a> com o atributo href. </p>
+    <p>Um exemplo de como seria uso dessa tag:< a href="https://www.google.com">clique aqui.< /a ></p></p>
+    
+    <h4>Tags de multimídia</h4>
+    
+    <h4>Imagens</h4>
+    
+    <p>Essa tag não necessita de fechamento, serve para incluir uma imagem ao seu texto. A partir dessa tag, utilizamos o
+        atributo src=”” onde deve ser digitado o local<br> em que a imagem se encontra. Também é muito utilizado em conjunto com
+        o atributo alt para definir o texto alternativo da imagem.
+    
+        <br>Por exemplo:
+    
+        < img src="imagens/imagem1.jpg" alt="imagem 1 da minha página" >.
+    </p>
+    <h4>Video e audio</h4>
+        Essa tag serve para indicar a inserção de um vídeo. Com isso, devemos colocar alguns atributos dentro da tag para poder ativar o controle, a principal dela é o controls.<br> 
+        Posteriormente, incluímos a tag < source > com os atributos src e type, onde receberão o local em que está o vídeo e o tipo do vídeo. É recomendado utilizar mais de um tipo<br> 
+        de source do mesmo vídeo, para garantir maior possibilidade de compatibilidade com o navegador. Finalmente, podemos incluir uma mensagem que será renderizada apenas<br> se o navegador do usuário não suportar a tag video.
+
+        Diante disso, vejamos os exemplos a seguir:<br>
+        <br>
+        < video controls ><br>
+          < source src="video.mp4" type="video/mp4" ><br>
+          < source src="video.ogg" type="video/ogg" ><br>
+          
+        < /video ><br>
+        <br>
+        A tag < audio > funciona da mesma forma que a tag < video >, portanto, utilizamos a tag < source> dentro dela. Vejamos o exemplo a seguir:<br>
+        <br>
+        < audio controls><br>
+          < source src="musica.ogg" type="audio/ogg" ><br>
+          < source src="musica.mp3" type="audio/mpeg" ><br>
+        
+        < /audio >
+    
+    <h2 id="referencias">Referências</h2>
+    <button><a href="#topo">Voltar ao topo</a></button>
+    <ul>
+        <li><a
+                href="https://profes.com.br/thais.adm/blog/estrutura-basica-para-iniciar-html#:~:text=Estrutura%20b%C3%A1sica%20para%20iniciar%20HTML%201%20%3C%21DOCTYPE%20html%3E,texto%20que%20ir%C3%A1%20aparecer%20no%20site.%20Mais%20itens" target="_blank">Sobre estrutura básica HTML</a></li>
+                <li><a href="https://www.homehost.com.br/blog/tutoriais/tags-html/#:~:text=Tags%20HTML%20estruturais%201%20%3Cheader%3E%3C%2Fheader%3E%20%E2%80%93%20Essas%20tags,geralmente%20utilizadas%20no%20final%20da%20p%C3%A1gina%3B%20Mais%20itens" target="_blank">Tags citadas</a></li>
+                <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML em geral</a></li>
+
+</body>
+
+</html>
